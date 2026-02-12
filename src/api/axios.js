@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://127.0.0.1:8082/api/',
+  baseURL: process.env.REACT_APP_API_URL || 'https://missions-hub-api-3.onrender.com',
 });
 
 api.interceptors.request.use(
